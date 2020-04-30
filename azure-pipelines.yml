@@ -53,8 +53,8 @@ stages:
 
 - task: CopyFiles@2
   inputs:
-    sourceFolder: $(System.DefaultWorkingDirectory)
-    targetFolder: $(Build.ArtifactStagingDirectory)
+      sourceFolder: $(System.DefaultWorkingDirectory)
+      targetFolder: $(Build.ArtifactStagingDirectory)
 
 - task: PublishBuildArtifacts@1
   inputs:
