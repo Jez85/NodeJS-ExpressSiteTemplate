@@ -51,14 +51,3 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       artifact: jeznodedrop
 
-    - task: CopyFiles@2
-      inputs:
-       sourceFolder: $(System.DefaultWorkingDirectory)
-       targetFolder: $(Build.ArtifactStagingDirectory)
-
-    - task: PublishBuildArtifacts@1
-      inputs:
-       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-       ArtifactName: 'jezexpressdrop'
-       publishLocation: 'Container'
-
