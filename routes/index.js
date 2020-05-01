@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Jez Express Finally its working' });
+  res.render('index', { title: 'Node Express - lets try this again' });
 };
